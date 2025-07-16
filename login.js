@@ -7,7 +7,7 @@ document.querySelector('#register').addEventListener('click', function() {
     const email = document.querySelector('#registerEmail').value;
     const password = document.querySelector('#registerPassword').value;
 
-    fetch('http://weatherapp-backend-one-tan.vercel.app/users/signup', {
+    fetch('https://weatherapp-backend-one-tan.vercel.app/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ name, email, password }),
@@ -23,7 +23,7 @@ document.querySelector('#connection').addEventListener('click',function() {
     const email = document.querySelector('#connectionEmail').value;
     const password = document.querySelector('#connectionPassword').value;
 
-    fetch('http://weatherapp-backend-one-tan.vercel.app/users/signin', {
+    fetch('https://weatherapp-backend-one-tan.vercel.app/users/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
 		body: JSON.stringify({ email, password }),
