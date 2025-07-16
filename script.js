@@ -24,7 +24,7 @@ fetch('https://weatherapp-backend-one-tan.vercel.app/weather')
 function updateDeleteCityEventListener() {
 	for (let i = 0; i < document.querySelectorAll('.deleteCity').length; i++) {
 		document.querySelectorAll('.deleteCity')[i].addEventListener('click', function () {
-			fetch(`https://weatherapp-backend-one-tan.vercel.app/${this.cityName}`, { method: 'DELETE' })
+			fetch(`https://weatherapp-backend-one-tan.vercel.app/${this.id}`, { method: 'DELETE' })
 				.then(response => response.json())
 				.then(data => {
 					if (data.result) {
